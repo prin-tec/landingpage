@@ -36,17 +36,59 @@
       transition: background 0.3s;
     }
     .btn-primary:hover { background: #444; }
+    .section { padding: 2.5rem 1rem; text-align: center; }
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
     .feature {
       border: 1px solid #ddd;
-      margin-bottom: 1rem;
-      border-radius: 6px;
-      padding: 1rem;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
       cursor: pointer;
-      transition: background 0.2s;
     }
-    .feature h3 { margin: 0; }
+    .feature h3 { margin-bottom: .5rem; }
     .feature p { display: none; margin-top: .5rem; }
     .feature.open p { display: block; }
+    .trust-logos {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .trust-logos img {
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+    }
+    .references {
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .ref-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+    footer { text-align: center; padding: 2rem 1rem; font-size: .9rem; border-top: 1px solid #ccc; }
+    footer a { text-decoration: underline; color: #000; }
     .cookie-banner {
       position: fixed;
       bottom: 0;
@@ -71,47 +113,6 @@
       cursor: pointer;
     }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Textildruck günstig",
-    "url": "https://www.textildruck-günstig.de/",
-    "logo": "https://www.textildruck-günstig.de/images/logo.jpg",
-    "description": "Textildruck ab 10 Stück – T-Shirts, Hoodies & Taschen günstig und hochwertig bedrucken lassen. Mit Preisrechner, Express-Service & WhatsApp-Support.",
-    "email": "info@textildruck-günstig.de",
-    "telephone": "+49 1514 0155887",
-    "sameAs": [
-      "https://www.facebook.com/textildruckguenstig",
-      "https://www.instagram.com/textildruck_guenstig/"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Wie viele Textilien muss ich mindestens bestellen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Bereits ab nur 1 Stück möglich! Für Siebdruck liegt die Mindestmenge bei 10 Stück."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Welche Textilien kann ich bedrucken lassen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "T-Shirts, Hoodies, Beutel, Caps und mehr – oder eigene Textilien."
-        }
-      }
-      // Weitere Fragen hier ...
-    ]
-  }
-  </script>
 </head>
 <body>
   <header>
@@ -122,14 +123,37 @@
       <a href="https://www.textildruck-günstig.de/textildruckpreisrechner" class="btn-primary">Jetzt Preis berechnen</a>
     </div>
   </header>
-  <main class="container">
-    <h2>Häufig gestellte Fragen</h2>
-    <div class="faq-accordion">
-      <div class="feature"><h3>Wie viele Textilien muss ich mindestens bestellen?</h3><p>Bereits ab nur 1 Stück möglich! Für Siebdruck liegt die Mindestmenge bei 10 Stück.</p></div>
-      <div class="feature"><h3>Welche Textilien kann ich bedrucken lassen?</h3><p>T-Shirts, Hoodies, Beutel, Caps und mehr – oder eigene Textilien.</p></div>
-      <div class="feature"><h3>Wie funktioniert der Preisrechner?</h3><p>Textil, Menge, Druckart und Optionen wählen – der Preis wird sofort angezeigt.</p></div>
+
+  <section class="section">
+    <div class="container">
+      <h2>Unsere Vorteile</h2>
+      <div class="features">
+        <div class="feature open"><h3>Bereits ab 10 Stück</h3><p>Ideal für Vereine, Events oder Firmen.</p></div>
+        <div class="feature open"><h3>24/7 WhatsApp Support</h3><p>Schnelle Antworten und Bestellungen.</p></div>
+        <div class="feature open"><h3>Express möglich</h3><p>Schnelle deutschlandweite Lieferung.</p></div>
+      </div>
+      <div class="trust-logos">
+        <img src="images/trusted.png" alt="Trusted Shops Logo">
+        <img src="images/paypal.png" alt="PayPal Logo">
+        <img src="images/made-in-germany.png" alt="Made in Germany">
+      </div>
     </div>
-  </main>
+  </section>
+
+  <section class="references">
+    <div class="container">
+      <h2>Unsere Referenzen</h2>
+      <div class="ref-grid">
+        <div class="ref-item"><img src="images/referenz1.jpg" alt="Bedruckte Hoodies für Sportverein"></div>
+        <div class="ref-item"><img src="images/referenz2.jpg" alt="Firmen-Shirts mit Logo"></div>
+        <div class="ref-item"><img src="images/referenz3.jpg" alt="Event-Shirts Beispiel"></div>
+        <div class="ref-item"><img src="images/referenz4.jpg" alt="Designbeispiel 1"></div>
+        <div class="ref-item"><img src="images/referenz5.jpg" alt="Designbeispiel 2"></div>
+        <div class="ref-item"><img src="images/referenz6.jpg" alt="Designbeispiel 3"></div>
+      </div>
+    </div>
+  </section>
+
   <footer class="container">
     <p>&copy; 2025 Textildruck günstig – <a href="/impressum">Impressum</a></p>
   </footer>

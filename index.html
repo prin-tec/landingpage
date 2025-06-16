@@ -1,72 +1,144 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Textildruck günstig ab 10 Stück – Express & Top-Qualität</title>
-  <meta name="description" content="Textildruck ab 10 Stück – T-Shirts, Hoodies & Taschen günstig & hochwertig bedrucken. Express-Service & WhatsApp-Support. Jetzt Preis kalkulieren!" />
-  <meta name="keywords" content="Textildruck günstig, T-Shirt Druck, DTF Druck, Siebdruck, Textilien bedrucken, Textildruck ab 10 Stück, Druckerei Shirts, Hoodies bedrucken, T-Shirt mit Logo, Textildruck Express" />
-  <meta property="og:title" content="Textildruck günstig & hochwertig ab 10 Stück" />
-  <meta property="og:description" content="T-Shirts, Hoodies & mehr mit Top-Qualität individuell bedrucken lassen. Jetzt Preis kalkulieren!" />
-  <meta property="og:image" content="https://www.textildruck-günstig.de/images/og-image.jpg" />
-  <meta property="og:url" content="https://www.textildruck-günstig.de/" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Textildruck ab 10 Stück – T-Shirts, Hoodies & Taschen günstig & hochwertig bedrucken. Express-Service & WhatsApp-Support. Jetzt Preis kalkulieren!">
+  <meta name="keywords" content="Textildruck günstig, T-Shirt Druck, DTF Druck, Siebdruck, Textilien bedrucken, Textildruck ab 10 Stück, Druckerei Shirts, Hoodies bedrucken, T-Shirt mit Logo, Textildruck Express">
+  <meta property="og:title" content="Textildruck günstig & hochwertig ab 10 Stück">
+  <meta property="og:description" content="T-Shirts, Hoodies & mehr mit Top-Qualität individuell bedrucken lassen. Jetzt Preis kalkulieren!">
+  <meta property="og:image" content="https://www.textildruck-günstig.de/images/og-image.jpg">
+  <meta property="og:url" content="https://www.textildruck-günstig.de/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #000;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; padding: 3rem 1rem 2rem; }
+    header img.logo { max-width: 180px; margin-bottom: 1.5rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    header p { font-size: 1.2rem; margin-bottom: 2rem; }
+    .btn-primary {
+      background: #000; color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover { background: #444; }
+    .feature {
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      padding: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .feature h3 { margin: 0; }
+    .feature p { display: none; margin-top: .5rem; }
+    .feature.open p { display: block; }
     .cookie-banner {
       position: fixed;
       bottom: 0;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.95);
+      background-color: rgba(0,0,0,0.95);
       color: #fff;
+      padding: 1rem;
       text-align: center;
-      padding: 1.5rem 1rem;
       z-index: 9999;
       display: none;
       flex-direction: column;
       gap: 0.5rem;
-      font-size: 1rem;
     }
-    .cookie-banner p {
-      margin: 0;
-    }
-    .cookie-banner a {
-      color: #fff;
-      text-decoration: underline;
-    }
+    .cookie-banner p { margin: 0; }
+    .cookie-banner a { color: #fff; text-decoration: underline; }
     .btn-cookie {
-      background: #fff;
-      color: #000;
-      border: none;
-      padding: 0.6rem 1.4rem;
-      font-weight: 600;
+      background: #fff; color: #000;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
       border-radius: 4px;
+      border: none;
       cursor: pointer;
-      margin-top: 0.5rem;
-    }
-    .faq-accordion .feature {
-      cursor: pointer;
-      border: 1px solid #ddd;
-      margin-bottom: 0.75rem;
-      padding: 1rem;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-    }
-    .faq-accordion .feature p {
-      display: none;
-      margin-top: 0.5rem;
-    }
-    .faq-accordion .feature.open p {
-      display: block;
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Textildruck günstig",
+    "url": "https://www.textildruck-günstig.de/",
+    "logo": "https://www.textildruck-günstig.de/images/logo.jpg",
+    "description": "Textildruck ab 10 Stück – T-Shirts, Hoodies & Taschen günstig und hochwertig bedrucken lassen. Mit Preisrechner, Express-Service & WhatsApp-Support.",
+    "email": "info@textildruck-günstig.de",
+    "telephone": "+49 1514 0155887",
+    "sameAs": [
+      "https://www.facebook.com/textildruckguenstig",
+      "https://www.instagram.com/textildruck_guenstig/"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie viele Textilien muss ich mindestens bestellen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bereits ab nur 1 Stück möglich! Für Siebdruck liegt die Mindestmenge bei 10 Stück."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Textilien kann ich bedrucken lassen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "T-Shirts, Hoodies, Beutel, Caps und mehr – oder eigene Textilien."
+        }
+      }
+      // Weitere Fragen hier ...
+    ]
+  }
+  </script>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <img src="images/logo.jpg" alt="Textildruck Logo" class="logo">
+      <h1>Textildruck günstig & hochwertig</h1>
+      <p>Hochwertiger Textildruck ab 10 Stück – individuell, schnell & zuverlässig.</p>
+      <a href="https://www.textildruck-günstig.de/textildruckpreisrechner" class="btn-primary">Jetzt Preis berechnen</a>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Häufig gestellte Fragen</h2>
+    <div class="faq-accordion">
+      <div class="feature"><h3>Wie viele Textilien muss ich mindestens bestellen?</h3><p>Bereits ab nur 1 Stück möglich! Für Siebdruck liegt die Mindestmenge bei 10 Stück.</p></div>
+      <div class="feature"><h3>Welche Textilien kann ich bedrucken lassen?</h3><p>T-Shirts, Hoodies, Beutel, Caps und mehr – oder eigene Textilien.</p></div>
+      <div class="feature"><h3>Wie funktioniert der Preisrechner?</h3><p>Textil, Menge, Druckart und Optionen wählen – der Preis wird sofort angezeigt.</p></div>
+    </div>
+  </main>
+  <footer class="container">
+    <p>&copy; 2025 Textildruck günstig – <a href="/impressum">Impressum</a></p>
+  </footer>
+
   <div id="cookie-banner" class="cookie-banner">
     <p>Diese Website verwendet Cookies, um Ihnen den bestmöglichen Service zu gewährleisten. <a href="/datenschutz" target="_blank">Mehr erfahren</a></p>
     <button id="cookie-accept" class="btn-cookie">Akzeptieren</button>
   </div>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const banner = document.getElementById('cookie-banner');
@@ -79,10 +151,9 @@
         banner.style.display = 'none';
       });
 
-      const faqItems = document.querySelectorAll('.faq-accordion .feature');
-      faqItems.forEach(item => {
-        item.addEventListener('click', () => {
-          item.classList.toggle('open');
+      document.querySelectorAll('.feature').forEach(el => {
+        el.addEventListener('click', () => {
+          el.classList.toggle('open');
         });
       });
     });

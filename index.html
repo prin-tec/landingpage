@@ -1,157 +1,163 @@
 <!DOCTYPE html>
-<html lang="de-DE">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Textildruck günstig & hochwertig</title>
-  <meta name="description" content="Professioneller Textildruck – schnell, zuverlässig und individuell gestaltet. Jetzt hochwertige T-Shirts, Hoodies & Taschen günstig bedrucken lassen!">
+  <title>Textildruck günstig & hochwertig – Jetzt online Preis berechnen</title>
+  <meta name="description" content="Textildruck ab 10 Stück – T-Shirts, Hoodies & Taschen individuell bedrucken. Jetzt online kalkulieren! Für Firmen, Vereine & Events – mit Express-Service & WhatsApp Support.">
+  <meta name="keywords" content="Textildruck günstig, T-Shirt Druck, DTF Druck, Siebdruck, Textilien bedrucken, Textildruck ab 10 Stück, Druckerei Shirts, Hoodies bedrucken, T-Shirt mit Logo, Textildruck Express">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --white: #ffffff;
       --black: #000000;
+      --gray-light: #f8f8f8;
+      --gray-medium: #eeeeee;
       --gray-dark: #333333;
-      --gray-light: #f9f9f9;
-      --accent: #ffd700;
+      --accent: #000000;
     }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: var(--white);
-      color: var(--gray-dark);
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: var(--white);
-      color: var(--gray-dark);
-      padding: 2rem 1rem 1rem;
-      border-bottom: 1px solid #e0e0e0;
-      text-align: center;
-    }
-
-    .logo img {
-      max-width: 180px;
-      margin-bottom: 1rem;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    nav a {
-      color: var(--gray-dark);
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    .hero {
-      background-color: var(--gray-light);
-      padding: 5rem 1rem 4rem;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      color: var(--gray-dark);
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Open Sans', sans-serif; background: var(--white); color: var(--gray-dark); line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; padding: 3rem 1rem 2rem; background: var(--white); }
+    header img.logo { max-width: 180px; margin-bottom: 1.5rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--black); }
+    header p { font-size: 1.2rem; margin-bottom: 2rem; }
     .btn-primary {
-      display: inline-block;
+      background: var(--black); color: var(--white); padding: 1rem 2rem;
+      text-decoration: none; border-radius: 6px; font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .btn-primary:hover { background: var(--gray-dark); }
+    .section { padding: 4rem 1rem; background: var(--gray-light); text-align: center; }
+    .section h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+    .features { display: flex; flex-direction: column; gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+    .feature { background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    .feature h3 { margin-bottom: 0.5rem; color: var(--black); }
+    .trust-logos { margin-top: 3rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+    .trust-logos img { height: 40px; object-fit: contain; }
+    .cta {
+      background: var(--gray-medium);
+      color: var(--black);
+      text-align: center;
+      padding: 6rem 1rem 6rem;
+    }
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--black);
+    }
+    .cta p {
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+    .cta a {
+      background: var(--white);
+      color: var(--black);
+      font-weight: bold;
       padding: 1rem 2rem;
-      background-color: var(--black);
-      color: var(--white);
-      border: none;
       border-radius: 6px;
       text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s;
+      display: inline-block;
+      border: 2px solid var(--black);
     }
-
-    .btn-primary:hover {
-      background-color: var(--gray-dark);
+    .cta a:hover {
+      background: var(--gray-light);
+      color: var(--black);
     }
-
-    .maschine-img {
-      margin-top: 3rem;
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    .testimonials {
+      background: var(--white);
+      text-align: center;
+      padding: 4rem 1rem;
     }
-
+    .testimonials h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .quotes { display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto; }
+    blockquote {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #444;
+      position: relative;
+      padding-left: 1rem;
+    }
+    blockquote span { display: block; margin-top: 0.5rem; font-weight: 600; color: var(--black); }
     footer {
-      background-color: var(--black);
-      color: var(--white);
+      background: var(--white);
+      color: var(--black);
       text-align: center;
       padding: 2rem 1rem;
-      font-size: 0.875rem;
-      margin-top: 3rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
     }
-
+    footer a {
+      color: var(--black);
+      text-decoration: underline;
+    }
+    footer a:hover {
+      color: #555;
+    }
     @media (min-width: 768px) {
-      .hero h1 { font-size: 3rem; }
-      .hero p { font-size: 1.25rem; }
+      .features { flex-direction: row; justify-content: space-between; }
+      .quotes { flex-direction: row; justify-content: space-between; }
     }
   </style>
 </head>
 <body>
-
   <header>
     <div class="container">
-      <div class="logo">
-        <img src="images/logo.jpg" alt="Textildruck Günstig Logo">
-      </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="https://www.xn--textildruck-gnstig-y6b.de/">Home</a></li>
-          <li><a href="https://www.xn--textildruck-gnstig-y6b.de/textildruckpreisrechner">Textilsiebdruck Preisrechner</a></li>
-          <li><a href="https://www.xn--textildruck-gnstig-y6b.de/dtftransferpreisrechner">DTF-Transfer Preisrechner</a></li>
-          <li><a href="https://www.xn--textildruck-gnstig-y6b.de/angebot-anfordern">Angebot anfordern</a></li>
-          <li><a href="https://www.xn--textildruck-gnstig-y6b.de/h%C3%A4ndlerpreisliste-2025">Händlerpreisliste 2025</a></li>
-          <li><a href="https://www.xn--textildruck-gnstig-y6b.de/impressum">Impressum / AGBs</a></li>
-        </ul>
-      </nav>
+      <img src="images/logo.jpg" alt="Textildruck Günstig Logo" class="logo">
+      <h1>Textildruck günstig & hochwertig</h1>
+      <p>Hochwertiger Textildruck ab 10 Stück – individuell, schnell & zuverlässig.</p>
+      <a href="https://www.xn--textildruck-gnstig-y6b.de/textildruckpreisrechner" class="btn-primary">Jetzt Preis berechnen</a>
     </div>
   </header>
 
-  <main class="hero">
+  <section class="section">
     <div class="container">
-      <h1>Textildruck günstig & hochwertig</h1>
-      <p>Professionell, schnell & individuell – Dein Partner für hochwertigen Textildruck zu günstigen Preisen.</p>
-      <a href="https://www.textildruck-günstig.de" class="btn-primary">Zur Website</a>
-      <img src="images/Prin-tec.jpg" alt="Textildruck-Maschine" class="maschine-img">
+      <h2>Unsere Vorteile</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Bereits ab 10 Stück</h3>
+          <p>Ideal für Vereine, Events oder Firmen – kleine Auflagen, große Wirkung.</p>
+        </div>
+        <div class="feature">
+          <h3>24/7 WhatsApp Support</h3>
+          <p>Fragen oder schnelle Bestellungen direkt per Messenger klären.</p>
+        </div>
+        <div class="feature">
+          <h3>Express möglich</h3>
+          <p>Schnelle Lieferung & Abwicklung auf Wunsch – deutschlandweit.</p>
+        </div>
+      </div>
+      <div class="trust-logos">
+        <img src="images/trusted.png" alt="Trusted Shops">
+        <img src="images/paypal.png" alt="PayPal">
+        <img src="images/madeingermany.png" alt="Made in Germany">
+        <img src="images/climate.png" alt="Klimaneutral">
+      </div>
     </div>
-  </main>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Individuelles Angebot anfordern</h2>
+      <p>Oder direkt über unser Formular oder per Mail kontaktieren.</p>
+      <a href="https://www.xn--textildruck-gnstig-y6b.de/angebot-anfordern">Angebot anfordern</a>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <h2>Was unsere Kunden sagen</h2>
+      <div class="quotes">
+        <blockquote>„Schneller Service und top Qualität – gerne wieder!“<br><span>– Julia M., Eventagentur</span></blockquote>
+        <blockquote>„Die T-Shirts waren super bedruckt. Preis-Leistung unschlagbar.“<br><span>– Kevin R., Sportverein</span></blockquote>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Textildruck günstig</p>
-    </div>
+    <p>&copy; 2025 Textildruck günstig – <a href="https://www.xn--textildruck-gnstig-y6b.de/impressum">Impressum</a></p>
   </footer>
-
 </body>
 </html>
 

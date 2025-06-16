@@ -33,11 +33,7 @@
       --gray-dark: #333333;
       --accent: #000000;
     }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Open Sans', sans-serif;
       background: var(--white);
@@ -47,30 +43,11 @@
       position: relative;
       padding-bottom: 100px; /* Platz für sticky Button */
     }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-    }
-    header {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      background: var(--white);
-      border-bottom: 1px solid #ddd;
-    }
-    header img.logo {
-      max-width: 180px;
-      margin-bottom: 1.5rem;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: var(--black);
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+    header { text-align: center; padding: 3rem 1rem 2rem; background: var(--white); border-bottom: 1px solid #ddd; }
+    header img.logo { max-width: 180px; margin-bottom: 1.5rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--black); }
+    header p { font-size: 1.2rem; margin-bottom: 2rem; }
     .btn-primary {
       background: var(--black);
       color: var(--white);
@@ -83,20 +60,9 @@
       max-width: 260px;
       width: 100%;
     }
-    .btn-primary:hover,
-    .btn-primary:focus {
-      background: var(--gray-dark);
-      outline: none;
-    }
-    .section {
-      padding: 4rem 1rem;
-      background: var(--gray-light);
-      text-align: center;
-    }
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
+    .btn-primary:hover, .btn-primary:focus { background: var(--gray-dark); outline: none; }
+    .section { padding: 4rem 1rem; background: var(--gray-light); text-align: center; }
+    .section h2 { font-size: 2rem; margin-bottom: 1.5rem; }
     .features {
       display: flex;
       flex-direction: column;
@@ -104,16 +70,8 @@
       max-width: 800px;
       margin: 0 auto;
     }
-    .feature {
-      background: var(--white);
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    }
-    .feature h3 {
-      margin-bottom: 0.5rem;
-      color: var(--black);
-    }
+    .feature { background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    .feature h3 { margin-bottom: 0.5rem; color: var(--black); }
     .trust-logos {
       margin-top: 4rem;
       display: flex;
@@ -122,25 +80,10 @@
       flex-wrap: wrap;
       align-items: center;
     }
-    .trust-logos img {
-      height: 40px;
-      object-fit: contain;
-    }
-    .cta {
-      background: var(--gray-medium);
-      color: var(--black);
-      text-align: center;
-      padding: 6rem 1rem 6rem;
-    }
-    .cta h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      color: var(--black);
-    }
-    .cta p {
-      margin-bottom: 3rem;
-      font-size: 1.1rem;
-    }
+    .trust-logos img { height: 40px; object-fit: contain; }
+    .cta { background: var(--gray-medium); color: var(--black); text-align: center; padding: 6rem 1rem 6rem; }
+    .cta h2 { font-size: 2rem; margin-bottom: 2rem; color: var(--black); }
+    .cta p { margin-bottom: 3rem; font-size: 1.1rem; }
     .cta a {
       background: var(--white);
       color: var(--black);
@@ -154,105 +97,19 @@
       width: 100%;
       transition: background 0.3s ease;
     }
-    .cta a:hover,
-    .cta a:focus {
-      background: var(--gray-light);
-      color: var(--black);
-      outline: none;
-    }
-    .contact {
-      background: var(--white);
-      padding: 4rem 1rem;
-      text-align: center;
-    }
-    .contact h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-    }
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .contact label {
-      font-weight: 600;
-      text-align: left;
-    }
-    .contact input,
-    .contact textarea {
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      width: 100%;
-    }
-    .contact button {
-      align-self: flex-start;
-    }
-    .faq {
-      background: var(--gray-light);
-      padding: 4rem 1rem;
-      text-align: left;
-    }
-    .faq h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .faq-item details {
-      margin-bottom: 1rem;
-    }
-    .faq-item summary {
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .testimonials {
-      background: var(--white);
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-    .testimonials h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    .quotes {
-      display: flex;;
-      flex-direction: column;
-      gap: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    blockquote {
-      font-style: italic;
-      font-size: 1.1rem;
-      color: #444;
-      position: relative;
-      padding-left: 1rem;
-    }
-    blockquote span {
-      display: block;
-      margin-top: 0.5rem;
-      font-weight: 600;
-      color: var(--black);
-    }
-    footer {
-      background: var(--white);
-      color: var(--black);
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #ccc;
-    }
-    footer a {
-      color: var(--black);
-      text-decoration: underline;
-    }
-    footer a:hover,
-    footer a:focus {
-      color: #555;
-      outline: none;
-    }
+    .cta a:hover, .cta a:focus { background: var(--gray-light); color: var(--black); outline: none; }
+    .faq { background: var(--gray-light); padding: 4rem 1rem; text-align: left; }
+    .faq h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; }
+    .faq-item details { margin-bottom: 1rem; }
+    .faq-item summary { font-weight: 600; cursor: pointer; }
+    .testimonials { background: var(--white); text-align: center; padding: 4rem 1rem; }
+    .testimonials h2 { font-size: 2rem; margin-bottom: 2rem; }
+    .quotes { display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto; }
+    blockquote { font-style: italic; font-size: 1.1rem; color: #444; position: relative; padding-left: 1rem; }
+    blockquote span { display: block; margin-top: 0.5rem; font-weight: 600; color: var(--black); }
+    footer { background: var(--white); color: var(--black); text-align: center; padding: 2rem 1rem; font-size: 0.9rem; border-top: 1px solid #ccc; }
+    footer a { color: var(--black); text-decoration: underline; }
+    footer a:hover, footer a:focus { color: #555; outline: none; }
 
     /* Sticky Call-To-Action Button */
     .sticky-btn {
@@ -264,7 +121,7 @@
       padding: 0.75rem 1.5rem;
       border-radius: 50px;
       z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       text-decoration: none;
       font-weight: 600;
       font-size: 1rem;
@@ -273,21 +130,11 @@
       width: 90vw;
       text-align: center;
     }
-    .sticky-btn:hover,
-    .sticky-btn:focus {
-      background: var(--gray-dark);
-      outline: none;
-    }
+    .sticky-btn:hover, .sticky-btn:focus { background: var(--gray-dark); outline: none; }
 
     @media (min-width: 768px) {
-      .features {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      .quotes {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+      .features { flex-direction: row; justify-content: space-between; }
+      .quotes { flex-direction: row; justify-content: space-between; }
     }
   </style>
   
@@ -310,130 +157,6 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Ab wie vielen Stücke kann ich bestellen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Wir bedrucken Textilien bereits ab 10 Stück. Für größere Auflagen kontaktiere uns gerne direkt."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Wie lange dauert die Lieferung?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Standardversand innerhalb Deutschlands dauert 2–4 Werktage. Express-Lieferung möglich."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Kann ich mein eigenes Design hochladen?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ja, über unseren Preisrechner kannst du dein Logo oder Design hochladen und sofort kalkulieren.
-
-  </script>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <img src="images/logo.jpg" alt="Textildruck Günstig Logo – Schwarzes Logo auf weißem Hintergrund" class="logo" loading="lazy" />
-      <h1>Textildruck günstig & hochwertig</h1>
-      <p>Hochwertiger Textildruck ab 10 Stück – individuell, schnell & zuverlässig.</p>
-      <a href="https://www.xn--textildruck-gnstig-y6b.de/textildruckpreisrechner" class="btn-primary" aria-label="Zum Preisrechner für Textildruck">Jetzt Preis berechnen</a>
-    </div>
-  </header>
-
-  <section class="section" aria-labelledby="vorteile-title">
-    <div class="container">
-      <h2 id="vorteile-title">Unsere Vorteile</h2>
-      <div class="features">
-        <article class="feature" aria-labelledby="feature1-title">
-          <h3 id="feature1-title">Bereits ab 10 Stück</h3>
-          <p>Ideal für Vereine, Events oder Firmen – kleine Auflagen, große Wirkung.</p>
-        </article>
-        <article class="feature" aria-labelledby="feature2-title">
-          <h3 id="feature2-title">24/7 WhatsApp Support</h3>
-          <p>Fragen oder schnelle Bestellungen direkt per Messenger klären.</p>
-        </article>
-        <article class="feature" aria-labelledby="feature3-title">
-          <h3 id="feature3-title">Express möglich</h3>
-          <p>Schnelle Lieferung &amp; Abwicklung auf Wunsch – deutschlandweit.</p>
-        </article>
-      </div>
-      <div class="trust-logos" role="list" aria-label="Vertrauenssiegel und Partnerlogos">
-        <img src="images/trusted.png" alt="Trusted Shops Zertifizierung – Vertrauenssiegel" loading="lazy" />
-        <img src="images/paypal.png" alt="PayPal Logo" loading="lazy" />
-        <img src="images/madeingermany.png" alt="Made in Germany Logo" loading="lazy" />
-        <img src="images/climate.png" alt="Klimaneutral Logo" loading="lazy" />
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" aria-labelledby="angebot-title">
-    <div class="container">
-      <h2 id="angebot-title">Individuelles Angebot anfordern</h2>
-      <p>Oder direkt über unser Formular oder per Mail kontaktieren.</p>
-      <a href="https://www.xn--textildruck-gnstig-y6b.de/angebot-anfordern" aria-label="Individuelles Angebot anfordern">Angebot anfordern</a>
-    </div>
-  </section>
-
-  <section class="contact" aria-labelledby="kontakt-title">
-    <div class="container">
-      <h2 id="kontakt-title">Kontakt</h2>
-      <form action="https://www.xn--textildruck-gnstig-y6b.de/kontakt" method="post">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">E-Mail</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Nachricht</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        <button type="submit" class="btn-primary">Absenden</button>
-      </form>
-    </div>
-  </section>
-
-  <section class="faq" aria-labelledby="faq-title">
-    <div class="container">
-      <h2 id="faq-title">Häufig gestellte Fragen</h2>
-      <div class="faq-item">
-        <details>
-          <summary>Ab wie vielen Stücke kann ich bestellen?</summary>
-          <p>Wir bedrucken Textilien bereits ab 10 Stück. Für größere Auflagen kontaktiere uns gerne direkt.</p>
-        </details>
-        <details>
-          <summary>Wie lange dauert die Lieferung?</summary>
-          <p>Standardversand innerhalb Deutschlands dauert 2–4 Werktage. Express-Lieferung möglich.</p>
-        </details>
-        <details>
-          <summary>Kann ich mein eigenes Design hochladen?</summary>
-          <p>Ja, über unseren Preisrechner kannst du dein Logo oder Design hochladen und sofort kalkulieren.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="testimonials" aria-labelledby="kundenmeinungen-title">
-    <div class="container">
-      <h2 id="kundenmeinungen-title">Was unsere Kunden sagen</h2>
-      <div class="quotes">
-        <blockquote>
-          „Schneller Service und top Qualität – gerne wieder!“<br />
-          <span>– Julia M., Eventagentur</span>
-        </blockquote>
-        <blockquote>
-          „Die T-Shirts waren super bedruckt. Preis-Leistung unschlagbar.“<br />
-          <span>– Kevin R., Sportverein</span>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Textildruck günstig – <a href="https://www.xn--textildruck-gnstig-y6b.de/impressum" aria-label="Impressum aufrufen">Impressum</a></p>
-  </footer>
-
-  <!-- Sticky Call-To-Action Button -->
-  <a href="https://www.xn--textildruck-gnstig-y6b.de/textildruckpreisrechner" class="sticky-btn\...
+      { "@type": "Question", "name": "Ab wie vielen Stücke kann ich bestellen?", "acceptedAnswer": { "@type": "Answer", "text": "Wir bedrucken Textilien bereits ab 10 Stück. Für größere Auflagen kontaktiere uns gerne direkt." } },
+      { "@
 

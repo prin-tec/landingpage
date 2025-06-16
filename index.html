@@ -10,8 +10,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* Responsive Logo */
-    .logo img { max-width: 100%; height: auto; }
+    /* Global Centering */
+    body { font-family: 'Open Sans', sans-serif; text-align: center; margin: 0; padding: 0; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; }
+    header, main, footer { text-align: center; }
+    .logo img { display: block; margin: 0 auto 1rem; max-width: 100%; height: auto; }
+    .nav ul { display: flex; justify-content: center; list-style: none; padding: 0; margin: 0; }
+    .nav ul li { margin: 0 1rem; }
+    .nav a { text-decoration: none; color: inherit; }
+    .hero, .features, .cta { padding: 2rem 1rem; }
+    .grid { display: flex; flex-direction: column; gap: 1.5rem; }
+    @media (min-width: 768px) {
+      .grid { flex-direction: row; justify-content: center; }
+    }
+    .feature-item { flex: 1; }
+    .btn-primary, .btn-secondary { display: inline-block; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; margin-top: 1rem; }
+    .btn-primary { background-color: #ffd700; color: #000; }
+    .btn-secondary { background-color: #25D366; color: #fff; }
   </style>
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="Professioneller T-Shirt-Druck günstig & individuell">

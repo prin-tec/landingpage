@@ -241,9 +241,53 @@
       .ref-item img {
         height: 140px;
       }
-    }
+    }.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  z-index: 9999;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.cookie-banner p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.cookie-banner a {
+  color: var(--white);
+  text-decoration: underline;
+}
+.btn-cookie {
+  background: var(--white);
+  color: var(--black);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
   </style>
 </head>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    if (!localStorage.getItem('cookieAccepted')) {
+      banner.style.display = 'flex';
+    }
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('cookieAccepted', 'true');
+      banner.style.display = 'none';
+    });
+  });
+</script>
+
 <body>
   <header>
     <div class="container">

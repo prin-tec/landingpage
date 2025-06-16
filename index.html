@@ -1,59 +1,116 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-DE">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>T-Shirt Druck günstig & individuell</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professioneller T-Shirt-Druck günstig & individuell</title>
+  <meta name="description" content="Günstiger, hochwertiger und individueller T-Shirt-Druck: DTF-Transferdruck, Siebdruck, Stick & Gravur. Jetzt Angebot per WhatsApp anfragen!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Responsive Logo */
+    .logo img { max-width: 100%; height: auto; }
+  </style>
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Professioneller T-Shirt-Druck günstig & individuell">
+  <meta property="og:description" content="Individueller T-Shirt-Druck per DTF, Siebdruck & Stick. Schnell, günstig, hochwertig">
+  <meta property="og:image" content="https://www.t-shirt-druck-günstig.de/images/og-image.jpg">
+  <meta property="og:url" content="https://www.t-shirt-druck-günstig.de">
+  <meta property="og:type" content="website">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "T-Shirt Druck günstig",
+    "image": "https://www.t-shirt-druck-günstig.de/images/logo_bw.png",
+    "url": "https://www.t-shirt-druck-günstig.de",
+    "sameAs": [
+      "https://www.textildruck-günstig.de"
+    ],
+    "telephone": "+49 1234 567890",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Beispielstraße 1",
+      "addressLocality": "Musterstadt",
+      "postalCode": "12345",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }]
+  }
+  </script>
 </head>
 <body>
-  <header class="site-header">
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+  <header class="site-header" role="banner">
     <div class="container">
-      <a href="/" class="logo">
-        <img src="images/logo.jpg" alt="Textildruck Günstig Logo">
+      <a href="https://www.t-shirt-druck-günstig.de" class="logo" aria-label="Startseite">
+        <img src="/images/logo_bw.png" alt="T-Shirt Druck günstig Logo">
       </a>
-      <nav class="nav">
-        <a href="https://www.textildruck-günstig.de">Mehr erfahren</a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menü ein-/ausblenden</span>
+        ☰
+      </button>
+      <nav id="primary-navigation" class="nav" role="navigation">
+        <ul>
+          <li><a href="#features">Leistungen</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="https://www.textildruck-günstig.de">Mehr erfahren</a></li>
+          <li><a href="https://www.t-shirt-druck-günstig.de/impressum.html">Impressum</a></li>
+          <li><a href="https://www.t-shirt-druck-günstig.de/datenschutz.html">Datenschutz</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Professioneller T-Shirt Druck zum Bestpreis</h1>
-      <p>Individuell, schnell & hochwertig – DTF, Siebdruck & Stick für dein Projekt.</p>
-      <a href="#contact" class="btn-primary">Jetzt Preis berechnen</a>
-    </div>
-  </section>
-
-  <section class="features">
-    <div class="container grid">
-      <div class="feature-item">
-        <h3>DTF-Transferdruck</h3>
-        <p>Brillante Farben, flexibel auf allen Textilien.</p>
+  <main id="main-content">
+    <section class="hero" role="region" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Professioneller T-Shirt-Druck zum Bestpreis</h1>
+        <p>Individuell, schnell & hochwertig – DTF-Transferdruck, Siebdruck & Stick für dein Projekt.</p>
+        <a href="#contact" class="btn-primary">Jetzt Preis berechnen</a>
       </div>
-      <div class="feature-item">
-        <h3>Siebdruck</h3>
-        <p>Langlebig und kosteneffizient ab kleinen Auflagen.</p>
-      </div>
-      <div class="feature-item">
-        <h3>Stick & Gravur</h3>
-        <p>Elegante Veredelung – zeitlos und hochwertig.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="cta">
-    <div class="container">
-      <h2>Bereit für dein Projekt?</h2>
-      <p>Kontaktiere uns jetzt per WhatsApp und erhalte dein individuelles Angebot.</p>
-      <a href="https://wa.me/491234567890" class="btn-secondary">WhatsApp Support 24/7</a>
-    </div>
-  </section>
+    <section id="features" class="features" role="region" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Unsere Leistungen</h2>
+        <div class="grid">
+          <article class="feature-item" role="article">
+            <h3>DTF-Transferdruck</h3>
+            <p>Brillante Farben, flexibel auf allen Textilien.</p>
+          </article>
+          <article class="feature-item" role="article">
+            <h3>Siebdruck</h3>
+            <p>Langlebig und kosteneffizient ab kleinen Auflagen.</p>
+          </article>
+          <article class="feature-item" role="article">
+            <h3>Stick & Gravur</h3>
+            <p>Elegante Veredelung – zeitlos und hochwertig.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <footer class="site-footer">
+    <section id="contact" class="cta" role="region" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Bereit für dein Projekt?</h2>
+        <p>Kontaktiere uns jetzt per WhatsApp und erhalte dein individuelles Angebot.</p>
+        <a href="https://wa.me/491234567890" class="btn-secondary" aria-label="WhatsApp Support 24/7">WhatsApp Support 24/7</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>&copy; 2025 T-Shirt Druck günstig. <a href="/impressum.html">Impressum</a> | <a href="/datenschutz.html">Datenschutz</a></p>
+      <p>&copy; 2025 T-Shirt Druck günstig. <a href="https://www.t-shirt-druck-günstig.de/impressum.html">Impressum</a> | <a href="https://www.t-shirt-druck-günstig.de/datenschutz.html">Datenschutz</a></p>
     </div>
   </footer>
 </body>

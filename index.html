@@ -12,8 +12,6 @@
       --black: #000000;
       --white: #ffffff;
       --accent: #ffd700;
-      --gray-light: #f4f4f4;
-      --gray-dark: #333333;
     }
 
     * {
@@ -24,14 +22,14 @@
 
     body {
       font-family: 'Open Sans', sans-serif;
-      background-color: var(--gray-light);
-      color: var(--gray-dark);
+      background-color: var(--black);
+      color: var(--white);
       line-height: 1.6;
     }
 
     header {
-      background-color: var(--black);
-      color: var(--white);
+      background-color: var(--white);
+      color: var(--black);
       padding: 2rem 1rem;
       text-align: center;
     }
@@ -51,7 +49,7 @@
     }
 
     nav a {
-      color: var(--white);
+      color: var(--black);
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s;
@@ -62,7 +60,6 @@
     }
 
     .hero {
-      background: var(--white);
       padding: 5rem 1rem;
       text-align: center;
     }
@@ -71,19 +68,20 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      color: var(--black);
+      color: var(--white);
     }
 
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
+      color: var(--white);
     }
 
     .btn-primary {
       display: inline-block;
       padding: 1rem 2rem;
-      background-color: var(--black);
-      color: var(--white);
+      background-color: var(--white);
+      color: var(--black);
       border: none;
       border-radius: 6px;
       text-decoration: none;
@@ -92,7 +90,8 @@
     }
 
     .btn-primary:hover {
-      background-color: var(--gray-dark);
+      background-color: var(--accent);
+      color: var(--black);
     }
 
     .maschine-img {
@@ -100,12 +99,12 @@
       max-width: 90%;
       height: auto;
       border-radius: 10px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 20px rgba(255,255,255,0.1);
     }
 
     footer {
-      background-color: var(--black);
-      color: var(--white);
+      background-color: var(--white);
+      color: var(--black);
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.875rem;
@@ -142,7 +141,7 @@
       <h1>Textildruck günstig & hochwertig</h1>
       <p>Professionell, schnell & individuell – Dein Partner für hochwertigen Textildruck zu günstigen Preisen.</p>
       <a href="https://www.textildruck-günstig.de" class="btn-primary">Zur Website</a>
-      <img src=\"images/Prin-tec.jpg\" alt="Textildruck-Maschine" class="maschine-img">
+      <img src="images/Prin-tec.jpg" alt="Textildruck-Maschine" class="maschine-img">
     </div>
   </main>
 
